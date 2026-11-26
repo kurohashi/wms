@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net10.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<UserSecretsId>7a8dc37e-823f-4bfa-946f-25cb24d97714</UserSecretsId>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Dit.Db.Extentions" Version="1.0.1" />
+		<PackageReference Include="Dit.Shared.Cqrs" Version="1.0.2" />
+		<PackageReference Include="Dit.Shared.Exceptions" Version="1.0.3" />
+		<PackageReference Include="ExcelDataReader" Version="3.9.0" />
+		<PackageReference Include="ExcelDataReader.DataSet" Version="3.9.0" />
+		<PackageReference Include="FluentValidation" Version="12.1.1" />
+		<PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="12.1.1" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="6.0.1" />
+		<PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="10.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Wms.Inventory.Application\Wms.Inventory.Application.csproj" />
+		<ProjectReference Include="..\Wms.Persistence\Wms.Persistence.csproj" />
+		<ProjectReference Include="..\Wms.Work.Application\Wms.Work.Application.csproj" />
+	</ItemGroup>
+
+</Project>
